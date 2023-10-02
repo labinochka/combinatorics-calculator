@@ -1,17 +1,17 @@
 <html lang="ru">
 <head>
-    <meta charset="window-1251">
-    <title>Калькулятор по комбинаторике</title>
+    <meta charset="UTF-8">
+    <title>РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ РїРѕ РєРѕРјР±РёРЅР°С‚РѕСЂРёРєРµ</title>
     <link rel="stylesheet" href="view/style.css">
 </head>
 <body>
 <form method="post">
-    <h2 style="color: white; font-family: Arial">Калькулятор по комбинаторике</h2>
-    <p style="color: white; font-family: Arial">Выберите, что хотите посчитать</p>
-    <button class="glow-on-hover" type="button" name="placements">Размещения</button>
-    <button class="glow-on-hover" type="button">Сочетания</button>
-    <button class="glow-on-hover" type="button">Перестановки</button>
-    <button class="glow-on-hover" type="button">Урновая модель</button>
+    <h2 style="color: white; font-family: Arial">РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ РїРѕ РєРѕРјР±РёРЅР°С‚РѕСЂРёРєРµ</h2>
+    <p style="color: white; font-family: Arial">Р’С‹Р±РµСЂРёС‚Рµ, С‡С‚Рѕ С…РѕС‚РёС‚Рµ РїРѕСЃС‡РёС‚Р°С‚СЊ</p>
+    <button class="glow-on-hover" type="button" name="placements">Р Р°Р·РјРµС‰РµРЅРёСЏ</button>
+    <button class="glow-on-hover" type="button">РЎРѕС‡РµС‚Р°РЅРёСЏ</button>
+    <button class="glow-on-hover" type="button">РџРµСЂРµСЃС‚Р°РЅРѕРІРєРё</button>
+    <button class="glow-on-hover" type="button">РЈСЂРЅРѕРІР°СЏ РјРѕРґРµР»СЊ</button>
 </form>
 </body>
 </html>

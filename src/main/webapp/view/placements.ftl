@@ -1,7 +1,7 @@
 <html lang="ru">
 <head>
-    <meta charset="window-1251">
-    <title>Размещения</title>
+    <meta charset="UTF-8">
+    <title>Р Р°Р·РјРµС‰РµРЅРёСЏ</title>
     <link rel="stylesheet" href="view/style.css">
 </head>
 <body>
