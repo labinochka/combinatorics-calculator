@@ -16,10 +16,8 @@ public class CalculatorServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
-
-        System.out.println(username);
-        System.out.println(password);
+        if (req.getParameter("placements") != null) {
+            System.out.println("qqq");
+        }
     }
 }
