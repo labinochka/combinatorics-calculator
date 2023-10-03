@@ -9,8 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/placements")
-public class PlacementsServlet extends HttpServlet {
+
+@WebServlet("/combinations")
+public class CombinationsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -33,7 +34,7 @@ public class PlacementsServlet extends HttpServlet {
                 req.setAttribute("message", "Данные некорректны");
             }
             else {
-                req.setAttribute("message", CombinatoricsOperations.getPlacements(n, k, repetitions));
+                req.setAttribute("message", CombinatoricsOperations.getCombinations(n, k, repetitions));
             }
         }
         req.getRequestDispatcher("placementsAndCombinations.ftl").forward(req, resp);
