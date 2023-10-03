@@ -11,13 +11,6 @@ import java.io.IOException;
 public class CalculatorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-        req.getRequestDispatcher("view/main.ftl").forward(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (req.getParameter("placements") != null) {
-            System.out.println("qqq");
-        }
+        req.getRequestDispatcher("main.ftl").forward(req, resp);
     }
 }
