@@ -15,7 +15,7 @@ public class CombinationsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-        req.getRequestDispatcher("placementsAndCombinations.ftl").forward(req, resp);
+        req.getRequestDispatcher("combinations.ftl").forward(req, resp);
     }
 
     @Override
@@ -37,6 +37,6 @@ public class CombinationsServlet extends HttpServlet {
                 req.setAttribute("message", CombinatoricsOperations.getCombinations(n, k, repetitions));
             }
         }
-        req.getRequestDispatcher("placementsAndCombinations.ftl").forward(req, resp);
+        req.getRequestDispatcher("combinations.ftl").forward(req, resp);
     }
 }

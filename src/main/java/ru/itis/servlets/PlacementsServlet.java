@@ -14,7 +14,7 @@ public class PlacementsServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-        req.getRequestDispatcher("placementsAndCombinations.ftl").forward(req, resp);
+        req.getRequestDispatcher("placements.ftl").forward(req, resp);
     }
 
     @Override
@@ -36,6 +36,6 @@ public class PlacementsServlet extends HttpServlet {
                 req.setAttribute("message", CombinatoricsOperations.getPlacements(n, k, repetitions));
             }
         }
-        req.getRequestDispatcher("placementsAndCombinations.ftl").forward(req, resp);
+        req.getRequestDispatcher("placements.ftl").forward(req, resp);
     }
 }
