@@ -17,7 +17,9 @@
     <a href="/CombinatoricsCalculator/permutations">
     <button class="glow-on-hover" type="button">Перестановки</button>
     </a>
+    <a href="/CombinatoricsCalculator/urn">
     <button class="glow-on-hover" type="button">Урновая модель</button>
+    </a>
 </form>
 </body>
 </html>

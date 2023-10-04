@@ -6,10 +6,10 @@
 </head>
 <body>
 <form method="post">
-    <input name="n" type="number" placeholder="Введите n"/>
+    <input name="n" type="number" placeholder="Введите n" value="${n!''}" required value=""/>
     <br>
     <br>
-    <input name="k" type="number" placeholder="Введите k"/>
+    <input name="k" type="number" placeholder="Введите k" value="${k!''}" required/>
     <br>
     <br>
     <input type="checkbox" id="checkbox" name="checkbox" value="true"/>

@@ -22,20 +22,16 @@ public class CombinationsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String nValue = req.getParameter("n");
         String kValue = req.getParameter("k");
-        String checkValue= req.getParameter("checkbox");
+        String checkValue = req.getParameter("checkbox");
         Boolean repetitions = Boolean.parseBoolean(checkValue);
-        if (nValue.isEmpty() || kValue.isEmpty()) {
+        int k = Integer.parseInt(kValue);
+        int n = Integer.parseInt(nValue);
+        if (k < 0 || k > n) {
             req.setAttribute("message", "Данные некорректны");
-        }
-        else {
-            int k = Integer.parseInt(kValue);
-            int n = Integer.parseInt(nValue);
-            if (k < 0 || k > n) {
-                req.setAttribute("message", "Данные некорректны");
-            }
-            else {
-                req.setAttribute("message", CombinatoricsOperations.getCombinations(n, k, repetitions));
-            }
+        } else {
+            req.setAttribute("message", CombinatoricsOperations.getCombinations(n, k, repetitions));
+            req.setAttribute("n", n);
+            req.setAttribute("k", k);
         }
         req.getRequestDispatcher("combinations.ftl").forward(req, resp);
     }
