@@ -26,12 +26,16 @@ public class CombinationsServlet extends HttpServlet {
         Boolean repetitions = Boolean.parseBoolean(checkValue);
         int k = Integer.parseInt(kValue);
         int n = Integer.parseInt(nValue);
-        if (k < 0 || k > n) {
+        if (k < 0 || n < 0) {
             req.setAttribute("message", "Данные некорректны");
         } else {
-            req.setAttribute("message", CombinatoricsOperations.getCombinations(n, k, repetitions));
-            req.setAttribute("n", n);
-            req.setAttribute("k", k);
+            if (repetitions || n >= k) {
+                req.setAttribute("message", CombinatoricsOperations.getCombinations(n, k, repetitions));
+                req.setAttribute("n", n);
+                req.setAttribute("k", k);
+            } else {
+                req.setAttribute("message", "Данные некорректны");
+            }
         }
         req.getRequestDispatcher("combinations.ftl").forward(req, resp);
     }
